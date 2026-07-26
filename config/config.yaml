@@ -1,0 +1,34 @@
+# Edit this list to your watchlist. Start small (15-20 names) so alerts stay
+# manageable and you can sanity-check every one by hand while testing.
+watchlist:
+  - AAPL
+  - MSFT
+  - NVDA
+  - AMZN
+  - GOOGL
+  # Add more tickers here. Use Yahoo Finance ticker format
+  # (US tickers as-is, ASX tickers need ".AX" suffix e.g. "BHP.AX")
+
+thresholds:
+  min_avg_daily_volume: 500000    # liquidity filter — tune per market cap you target
+  trend_short_ma_days: 50
+  trend_long_ma_days: 150
+  catalyst_lookback_days: 5
+
+catalyst_keywords:
+  - "beat"
+  - "beats estimates"
+  - "raises guidance"
+  - "upgrade"
+  - "upgraded"
+  - "record profit"
+  - "record revenue"
+  - "contract win"
+  - "acquisition"
+  - "price target raised"
+
+# Fill these in once you're ready to connect to Moomoo (Phase 2+)
+moomoo:
+  opend_host: "127.0.0.1"
+  opend_port: 11111
+  trade_env: "SIMULATE"   # SIMULATE = paper trading. Change to "REAL" only in Phase 3.

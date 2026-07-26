@@ -1,0 +1,7 @@
+yfinance>=0.2.40
+pandas>=2.0.0
+feedparser>=6.0.10
+pyyaml>=6.0
+# Moomoo API SDK — install separately per Moomoo's docs (moomoo-api / futu-api),
+# version pinned there since it's tied to your OpenD gateway version:
+# https://openapi.moomoo.com/moomoo-api-doc/en/quick/install.html
